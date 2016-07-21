@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1400px;
+  min-width: 600px;
+}
+
+#main_content,
+#sidebar {
+  padding: 20px 30px;
+}
+
+#main_content {
+  float: left;
+  width: 70%;
+}
+
+#sidebar {
+  overflow: hidden;
+}

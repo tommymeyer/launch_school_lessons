@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model Project</title>
+</head>
+
+<style>
+
+  body {
+    border: 1px solid gray;
+    font-family: Helvetica, sans-serif;
+    margin: 8px 20px;
+    padding: 20px 20px;
+  }
+
+  h2 {
+    color: #ce4a4a;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .anchor {
+    display: block;
+  }
+
+  #links {
+    border: 1px dashed black;
+    display: inline-block;
+    padding: 20px;
+  }
+
+  #div2 {
+    background: #00bfff;
+    border-radius: 10px;
+    color: white;
+    padding: 25px 51px;
+    position: fixed;
+      left: 35px;
+      bottom: 50px;
+  }
+
+  #div3 {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  #a1{
+    float: left;
+  }
+
+  #a2 {
+    float: left;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  #a3 {
+    float: right;
+  }
+
+</style>
+
+<body>
+
+  <h2>Inline Elements</h2>
+  <p>Inline elements occupy only the space of the content. It doesn't take width and height values.</p>
+
+  <h4>Example:</h4>
+  <p>Anchor tags are normally inline elements. They only take up the width of their content. The next anchor tags follow right after.</p>
+  <div id="links">
+    <a href="#" class="anchor">Home</a>
+    <a href="#" class="anchor">Portfolio</a>
+    <a href="#" class="anchor">Contact</a>
+  </div>
+
+  <div id="div2">I'm fixed position.</div>
+
+  <h4>Floating Inline Elements</h4>
+
+  <div id="div3">
+    <a href="#" id="a1">Home</a>
+    <a href="#" id="a2">Portfolio</a>
+    <a href="#" id="a3">Contact</a>
+  </div>
+
+</body>
+
+</html>

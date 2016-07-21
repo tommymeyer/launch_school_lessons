@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Forms Exercises</title>
+</head>
+
+<body>
+
+<br>
+
+<!-- EXERCISE #1 -->
+<em>EXERCISE #1</em>
+
+  <form action="#" method="post">
+    <fieldset>
+
+      <dl>
+
+        <dt><label for="name">Your Name</label></dt>
+          <dd>
+            <input type="text" name="your-name" id="name" required>
+          </dd>
+
+        <dt><label for="email">Email</label></dt>
+          <dd>
+            <input type="email" name="email" id="email" required>
+          </dd>
+
+        <dt><label for="phone">Phone Number</label></dt>
+          <dd>
+            <input type="tel" name="phone" id="phone" required>
+          </dd>
+
+        <dt><label for="message">Message</label></dt>
+          <dd>
+            <textarea name="message" cols="80" rows="6" id="message" required></textarea>
+          </dd>
+
+      </dl>
+
+        <input type="submit" value="Send Message">
+        <input type="reset" value="Clear">
+
+    </fieldset>
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+<!-- EXERCISE #2 -->
+<em>EXERCISE #2</em>
+
+  <form action="#" method="get">
+    <fieldset>
+
+      <label for="query">Search for"</label>
+        <input type="search" name="query" id="query">
+
+      <label><input type="radio" name="filter" value="tv">TV</label>
+
+      <label><input type="radio" name="filter" value="movies">Movies</label>
+
+      <label><input type="radio" name="filter" value="music">Music</label>
+
+      <input type="button" value="Search">
+
+    </fieldset>
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+<!-- EXERCISE #3 -->
+<em>EXERCISE #3</em>
+
+  <form action="#" method="post">
+    <fieldset>
+
+      <dl>
+
+        <dt><label for="title">Movie</label></dt>
+          <dd>
+            <select name="title" id="title">
+              <option value="Looper">Looper</option>
+              <option value="Frozen">Frozen</option>
+              <option value="Tommy Boy" selected>Tommy Boy</option>
+            </select>
+          </dd>
+
+        <dt><label for="rating">Rating</label></dt>
+          <dd><input type="range" min="1" max="5" step="1" id="rating"></dd>
+
+      </dl>
+
+      <div>
+        <label><input type="checkbox" name="favorite" checked>Add to my favorites</label>
+      </div>
+
+      <input type="submit" value="Rate movie">
+
+    </fieldset>
+  </form>
+
+</body>
+
+</html>

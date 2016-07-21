@@ -1,0 +1,88 @@
+@import url("whitespace_reset.css");
+
+body {
+  background-image: linear-gradient(to bottom, #d1dbbd, #fcfff5);
+  background-repeat: no-repeat;
+  color: #3e606f;
+  font: normal 18px "Roboto Condensed", sans-serif;
+}
+
+header {
+  margin: 0 auto;
+  padding: 20px 20px 0 20px;
+  width: 920px;
+}
+
+h1 {
+  background: transparent url("logo.png") 0 0 no-repeat;
+  color: #193441;
+  float: left;
+  font-size: 36px;
+  font-weight: normal;
+  padding: 40px 0 15px 115px;
+}
+
+nav {
+  float: right;
+  margin-bottom: 15px;
+  padding: 75px 0 0 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  background: #fcfff5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #91aa9d;
+  display: block;
+  margin-bottom: -20px;
+  padding: 10px 40px 14px 40px;
+  text-decoration: none;
+}
+
+nav a.active {
+  color: #fcfff5;
+  background: #91aa9d;
+}
+
+main {
+  background: white;
+  box-shadow: 0 5px 2px 1px #b8b8b7;
+  clear: both;
+  margin: 0 auto;
+  overflow: auto;
+  width: 960px;
+}
+
+#img_marsh {
+  margin-bottom: 25px;
+  padding: 30px 0 0 30px;
+}
+
+h2 {
+  color: #3e606f;
+  font-size: 32px;
+  padding: 10px 0 0 30px;
+}
+
+p {
+  padding: 0 0 20px 30px;
+}
+
+h2 + p {
+  padding: 30px 30px 20px 30px;
+}
+
+#img_tree {
+  float: right;
+  padding: 0 30px 48px 42px;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 15px 0 50px 0;
+  width: 960px;
+}

@@ -1,0 +1,135 @@
+@import url("meyer_reset2.css");
+
+body {
+  font: normal 28px Helvetica, Arial, sans-serif;
+  margin: 8px;
+}
+
+article {
+  border: 2px solid #000;
+  padding: 10px 15px 15px 15px;
+  width: 680px;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: bold;
+}
+
+p:last-of-type {
+  padding-bottom: 5px;
+}
+
+h2 {
+  border-top: 30px solid #000;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+header > dl {
+  border-top: 1px solid #000;
+}
+
+dt,
+dd {
+  display: inline-block;
+}
+
+header dt:first-of-type {
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+header dt:last-of-type {
+  padding-left: 219px;
+}
+
+td {
+  padding: 2px 0;
+}
+
+table:first-of-type thead th {
+  border-top: 15px solid #000;
+  font-weight: bold;
+  padding: 11px 0 1px 0;
+  text-align: right;
+}
+
+table:first-of-type td {
+  border-top: 1px solid #000;
+}
+
+th dt {
+  font-weight: bold;
+}
+
+tbody th {
+  border-top: 1px solid #000;
+}
+
+tbody:first-of-type th {
+  text-align: left;
+}
+
+table:first-of-type tbody:first-of-type tr td:nth-of-type(3) {
+  font-weight: bold;
+  text-align: right;
+}
+
+tr > th + td {
+  font-weight: bold;
+  text-align: right;
+}
+
+tr td.empty_cell {
+  border-top: none;
+  width: 28px;
+}
+
+tbody:first-of-type tr:last-child th {
+  padding: 2px 0;
+}
+
+table:first-of-type tbody:last-of-type tr:first-of-type {
+  border-top: 20px solid #000;
+}
+
+table:first-of-type tbody:last-of-type td:nth-of-type(2n+2) {
+  text-align: right;
+}
+
+tfoot td {
+  font-size: 25px;
+  padding: 15px 10px 15px 10px;
+}
+
+table:nth-of-type(2) {
+  font-size: 22.5px;
+  margin-bottom: 6px;
+  text-align: left;
+  width: 646px;
+ }
+
+table:nth-of-type(2) thead {
+  border-bottom: 1px solid#000;
+ }
+
+table:nth-of-type(2) tr:nth-child(4n+2) td:first-child {
+  text-indent: 35px;
+ }
+
+table:nth-of-type(2) th:nth-child(2) {
+  padding-right: 18px;
+ }
+
+table:nth-of-type(2) th:nth-child(3) {
+  padding-right: 48px;
+ }
+
+ th:nth-child(4) {
+  padding-right: 48px;
+  }
+
+  em {
+    font-style: italic;
+  }

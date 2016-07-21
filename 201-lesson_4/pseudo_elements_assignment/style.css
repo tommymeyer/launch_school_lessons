@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font: normal 18px Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+h1 {
+  margin-top: 0;
+  font-size: 24px;
+}
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#column {
+  margin: 0 140px 0 160px;
+}
+
+header {
+  float: left;
+  width: 160px;
+  height: 100vh;
+  padding: 15px;
+  margin-left: -160px;
+  font-size: 14px;
+  background: #2c3e50;
+  box-sizing: border-box;
+}
+header a {
+  text-decoration: none;
+  color: #ecf0f1;
+}
+header li {
+  padding-bottom: 15px;
+}
+
+main {
+  float: left;
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+footer {
+  float: right;
+  width: 140px;
+  height: 100vh;
+  padding: 15px;
+  margin-right: -140px;
+  font-size: 12px;
+  background: #e74c3c;
+  box-sizing: border-box;
+}
+footer li {
+  padding-bottom: 10px;
+}
+footer a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #2980b9;
+  background: #ffffff;
+}
+
+/* Pseduo element CSS */
+
+header ul a:before {
+  background: transparent url("icons_nav.png") 0 0 no-repeat;
+  content: "";
+  display: inline-block;
+  height: 26px;
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+  width: 27px;
+}
+
+header ul a.home:hover:before {
+  background-position: 100% 0;
+}
+
+header ul a.photos:before {
+  background-position: 0 -26px;
+  height: 20px;
+}
+
+header ul a.photos:hover:before {
+  background-position: 100% -26px;
+}
+
+header ul a.contact:before {
+  background-position: 0 -46px;
+  height: 16px;
+}
+
+header ul a.contact:hover:before {
+ background-position: 100% -46px;
+}
+
+footer a:before {
+  background: transparent url("icons_social.png") 0 0 no-repeat;
+  background-size: 24px;
+  content: "";
+  display: inline-block;
+  height: 24px;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 24px;
+}
+
+footer a.facebook:before {
+  background-position: 0 -24px;
+}
+
+footer a.instagram:before {
+  background-position: 0 100%;
+}
+
+footer a:hover:before {
+  background-color: #00cbff;
+}

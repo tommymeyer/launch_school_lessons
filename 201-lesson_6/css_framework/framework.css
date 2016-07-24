@@ -6,44 +6,164 @@ body {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   margin: 0 0 25px 0;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
+  margin: 0 0 20px 0;
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1.5em;
+  margin: 0 0 15px 0;
 }
 
 h4 {
+  font-size: 1.25em;
+  margin: 0 0 10px 0;
+}
+
+.copy p {
   font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
 }
 
-.copy p, ol, ul {
-  font: normal 1em Helvetica, Arial, sans-serif;
+.copy ul {
+  list-style: disc;
+  margin: 0 0 10px 0;
+  padding: 0 0 20px 10px;
 }
 
-.nested,
-.roman {
-  font: normal 0.8572em Helvetica, Arial, sans-serif;
+.copy ul ul {
+  list-style: circle;
+  padding: 10px 0 0 18px;
 }
 
-.unorder {
-  list-style: square;
-}
-
-.order {
+.copy ol {
   list-style: decimal;
+  margin: 0 0 10px 0;
+  padding: 0 0 20px 10px;
 }
 
-.roman {
+.copy ol ol {
+  list-style: lower-alpha;
+  padding: 10px 0 0 18px;
+}
+
+.copy ol.roman {
+  list-style: upper-roman;
+}
+
+.copy ol.roman ol {
   list-style: lower-roman;
 }
 
 .row {
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   max-width: 1200px;
+}
+
+.row:after {
+  clear: both;
+  content: "";
+  display: block;
+  line-height: 0;
+}
+
+.sixth, .fourth, .third, .half, .two_third, .five_sixth {
+  float: left;
+}
+
+.sixth {
+  width: 16.66%;
+}
+
+.fourth {
+  width: 25%;
+}
+
+.third {
+  width: 33.33%;
+}
+
+.half {
+  width: 50%;
+}
+
+.two_third {
+  width: 66.66%;
+}
+
+.five_sixth {
+  width: 83.33%;
+}
+
+.margin_row .half + .half,
+.margin_row .half + .third,
+.margin_row .half + .fourth,
+.margin_row .half + .sixth,
+.margin_row .half + .two_third,
+.margin_row .half + .five_sixth,
+.margin_row .third + .third,
+.margin_row .third + .half,
+.margin_row .third + .fourth,
+.margin_row .third + .sixth,
+.margin_row .third + .two_third,
+.margin_row .third + .five_sixth,
+.margin_row .fourth + .third,
+.margin_row .fourth + .half,
+.margin_row .fourth + .fourth,
+.margin_row .fourth + .sixth,
+.margin_row .fourth + .two_third,
+.margin_row .fourth + .five_sixth,
+.margin_row .sixth + .third,
+.margin_row .sixth + .half,
+.margin_row .sixth + .fourth,
+.margin_row .sixth + .sixth,
+.margin_row .sixth + .two_third,
+.margin_row .sixth + .five_sixth,
+.margin_row .two_third + .third,
+.margin_row .two_third + .half,
+.margin_row .two_third + .fourth,
+.margin_row .two_third + .sixth,
+.margin_row .two_third + .two_third,
+.margin_row .two_third + .five_sixth,
+.margin_row .five_sixth + .third,
+.margin_row .five_sixth + .half,
+.margin_row .five_sixth + .fourth,
+.margin_row .five_sixth + .sixth,
+.margin_row .five_sixth + .two_third,
+.margin_row .five_sixth + .five_sixth {
+  margin-left: 2%;
+}
+
+.margin {
+  margin-left: 2%;
+}
+
+.margin_row .sixth {
+  width: 15%;
+}
+
+.margin_row .fourth {
+  width: 23.5%;
+}
+
+.margin_row .third {
+  width: 32%;
+}
+
+.margin_row .half {
+  width: 49%;
+}
+
+.margin_row .two_third {
+  width: 66%;
+}
+
+.margin_row .five_sixth {
+  width: 83%;
 }

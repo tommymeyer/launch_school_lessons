@@ -1,5 +1,5 @@
 
-@import url("meyer_reset.css");
+@import url("meyer_reset2.css");
 
 
 /*
@@ -7,10 +7,6 @@
 GENERAL STYLES
 ==============
 */
-* {
-  box-sizing: border-box;
-}
-
 body {
   background: #2f2840 url("images/bg_body.gif") 50% 0 repeat;
 	color: #45494d;
@@ -63,6 +59,10 @@ nav a {
 .active {
 	color: #62a3e2;
 	font-weight: bold;
+}
+
+.not_active_highlight:hover {
+  color: #14af8f;
 }
 
 

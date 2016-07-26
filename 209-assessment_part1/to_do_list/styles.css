@@ -1,1 +1,161 @@
 @import url("meyer_reset2.css");
+
+
+/*
+==============
+General Styles
+==============
+*/
+body {
+  font: lighter 16px Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.31em;
+}
+
+h2 {
+  font-size: 1.125em;
+}
+
+
+/*
+==========
+Navigation
+==========
+*/
+nav {
+  background: #464f77;
+  float: left;
+  height: 100vh;
+  padding: 75px 0 75px 0;
+  width: 28%;
+}
+
+h2 {
+  color: #fff;
+  display: inline-block;
+  padding-right: 120px;
+}
+
+h2:first-of-type:before {
+  content: url("list_icon.png");
+  padding-right: 10px;
+  vertical-align: -5px;
+}
+
+h2:nth-of-type(2):before {
+  content: url("checked_box.png");
+  padding-right: 10px;
+  vertical-align: -5px;
+}
+
+nav p + ul {
+  padding-top: 15px;
+}
+
+nav p,
+nav dd {
+  background: #6b7292;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.875em;
+  opacity: .8;
+  padding: 2px 6px 2px 4px;
+}
+
+ul {
+  padding: 15px 0 45px 0;
+}
+
+nav dl {
+  padding: 10px 0 10px 135px;
+}
+
+nav dt {
+  color: #b3b3b3;
+  display: inline-block;
+  padding-right: 160px;
+}
+
+nav dd {
+  padding: 2px 6px;
+}
+
+.active {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.active dt {
+  color: #fff;
+}
+
+.active dd {
+  background: #148fd5;
+}
+
+.indent {
+  padding-left: 100px;
+}
+
+#completed_tasks {
+  padding-top: 20px;
+}
+
+#completed_tasks li  {
+  color: #b3b3b3;
+  padding: 0 0 20px 135px;
+  text-decoration: line-through;
+}
+
+
+/*
+====
+Main
+====
+*/
+main {
+  /*background: #888;*/
+  float: right;
+  height: 100vh;
+  padding: 75px 35px;
+  width: 72%;
+}
+
+main h1,
+main p {
+  display: inline-block;
+}
+
+main h1 {
+  padding: 0 15px 40px 0;
+}
+
+main p {
+  background: #148fd5;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.875em;
+  opacity: .8;
+  padding: 2px 6px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#new_task {
+  color: #148fd5;
+  cursor: pointer;
+}
+
+#new_task:before {
+  content: url("plus_icon.png");
+  padding-right: 10px;
+}
+
+ul label {
+  cursor: pointer;
+}

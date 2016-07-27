@@ -3,77 +3,80 @@
   <head>
     <meta charset="utf-8">
     <title>To Do List</title>
-    <link rel="stylesheet" href="styles2.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <nav>
-        <h2 class="indent">All ToDos</h2>
-        <p>18</p>
-
-        <ul id="all_tasks">
-          <li>
-            <dl class="active">
-              <dt>02/16</dt>
-              <dd>8</dd>
-            </dl>
-          </li>
-
-          <li>
-            <dl>
-              <dt>03/16</dt>
-              <dd>2</dd>
-            </dl>
-          </li>
-
-          <li>
-            <dl>
-              <dt>04/16</dt>
-              <dd>1</dd>
-            </dl>
-          </li>
-
-          <li>
-            <dl>
-              <dt>05/16</dt>
-              <dd>1</dd>
-            </dl>
-          </li>
-
-          <li>
-            <dl>
-              <dt>06/16</dt>
-              <dd>6</dd>
-            </dl>
-          </li>
-        </ul>
-
-        <h2 class="indent">Completed</h2>
-
-        <ul id="completed_tasks">
-          <li>02/15</li>
-          <li>03/15</li>
-          <li>04/15</li>
-          <li>05/15</li>
-          <li>06/15</li>
-        </ul>
-    </nav>
-
-    <label for="nav_toggle">
-      <img src="nav_icon.png" alt="Menu Icon" />
-    </label>
-    <input type="checkbox" id="nav_toggle" />
-
     <main>
-      <header>
-        <h1>02/16</h1>
-        <p>8</p>
-      </header>
-
-      <label id="new_task">
-        <input type="checkbox" />
-        Add new to do
+      <input type="checkbox" id="nav_toggle" />
+      <label for="nav_toggle">
+        <img src="nav_icon.png" alt="Menu Icon" />
       </label>
+
+      <article id="nav">
+        <nav>
+          <h2 class="indent">All ToDos</h2>
+          <p>18</p>
+
+          <ul id="all_tasks">
+            <li>
+              <dl class="active">
+                <dt>02/16</dt>
+                <dd>8</dd>
+              </dl>
+            </li>
+
+            <li>
+              <dl>
+                <dt>03/16</dt>
+                <dd>2</dd>
+              </dl>
+            </li>
+
+            <li>
+              <dl>
+                <dt>04/16</dt>
+                <dd>1</dd>
+              </dl>
+            </li>
+
+            <li>
+              <dl>
+                <dt>05/16</dt>
+                <dd>1</dd>
+              </dl>
+            </li>
+
+            <li>
+              <dl>
+                <dt>06/16</dt>
+                <dd>6</dd>
+              </dl>
+            </li>
+          </ul>
+
+          <h2 class="indent">Completed</h2>
+
+          <ul id="completed_tasks">
+            <li>02/15</li>
+            <li>03/15</li>
+            <li>04/15</li>
+            <li>05/15</li>
+            <li>06/15</li>
+          </ul>
+        </nav>
+      </article>
+
+      <article id="main_content">
+        <header>
+          <h1>02/16</h1>
+          <p>8</p>
+        </header>
+
+        <label id="new_task">
+          <input type="checkbox" />
+          Add new to do
+        </label>
 
         <ul id="current_tasks">
           <li>
@@ -140,6 +143,7 @@
             </label>
           </li>
         </ul>
+      </article>
     </main>
 
   </body>

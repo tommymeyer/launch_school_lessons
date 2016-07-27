@@ -51,7 +51,7 @@ h2:nth-of-type(2):before {
 }
 
 nav p + ul {
-  padding-top: 15px;
+  padding: 10px 0 60px 0;
 }
 
 nav p,
@@ -63,10 +63,6 @@ nav dd {
   font-size: 0.875em;
   opacity: .8;
   padding: 2px 6px 2px 4px;
-}
-
-ul {
-  padding: 15px 0 45px 0;
 }
 
 nav dl {
@@ -100,7 +96,7 @@ nav dd {
 }
 
 #completed_tasks {
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 #completed_tasks li  {
@@ -116,10 +112,9 @@ Main
 ====
 */
 main {
-  /*background: #888;*/
   float: right;
   height: 100vh;
-  padding: 75px 35px;
+  padding: 75px 10px;
   width: 72%;
 }
 
@@ -129,7 +124,7 @@ main p {
 }
 
 main h1 {
-  padding: 0 15px 40px 0;
+  padding: 0 15px 40px 35px;
 }
 
 main p {
@@ -140,6 +135,7 @@ main p {
   font-size: 0.875em;
   opacity: .8;
   padding: 2px 6px;
+  vertical-align: text-bottom;
 }
 
 input[type="checkbox"] {
@@ -149,6 +145,7 @@ input[type="checkbox"] {
 #new_task {
   color: #148fd5;
   cursor: pointer;
+  padding: 0 0 0 35px;
 }
 
 #new_task:before {
@@ -156,6 +153,38 @@ input[type="checkbox"] {
   padding-right: 10px;
 }
 
-ul label {
+main ul {
+  padding: 15px 0 0 20px;
+}
+
+#current_tasks label {
   cursor: pointer;
+}
+
+#current_tasks li {
+  border-top: 1px solid #e7e7e7;
+  margin-right: 100px;
+  padding: 15px 0 15px 15px;
+}
+
+#current_tasks li:after {
+  content: url("trash_icon.png");
+  padding-left: 788px;
+}
+
+.unchecked:before {
+  content: url("checkbox.png");
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.checked {
+  color: #b3b3b3;
+  text-decoration: line-through;
+}
+
+.checked:before {
+  content: url("sm_checked_box.png");
+  cursor: pointer;
+  padding-right: 10px;
 }

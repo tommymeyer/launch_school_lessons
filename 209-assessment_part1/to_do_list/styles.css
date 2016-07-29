@@ -38,7 +38,7 @@ a {
 Nav Article
 ===========
 */
-#nav {
+nav {
   background: #464f77;
   float: left;
   height: 100vh;
@@ -56,23 +56,23 @@ h2 {
 }
 
 .all_tasks_head:before {
-  content: url("list_icon.png");
+  content: url("images/list_icon.png");
   padding-right: 10px;
   vertical-align: -5px;
 }
 
 .completed_tasks_head:before {
-  content: url("checked_box.png");
+  content: url("images/checked_box.png");
   padding-right: 10px;
   vertical-align: -5px;
 }
 
-#nav p + ul {
+nav p + ul {
   padding: 10px 0 60px 0;
 }
 
-#nav p,
-#nav dd {
+nav p,
+nav dd {
   background: #6b7292;
   border-radius: 20px;
   color: #fff;
@@ -82,16 +82,16 @@ h2 {
   padding: 6px 7px 6px 6px;
 }
 
-#nav dl {
+nav dl {
   cursor: pointer;
   padding: 10px 0 10px 135px;
 }
 
-#nav dl:hover {
+nav dl:hover {
   background: rgba(0, 0, 0, 0.2);
 }
 
-#nav dd {
+nav dd {
   padding: 2px 6px;
 }
 
@@ -109,7 +109,7 @@ nav dt {
   color: #fff;
 }
 
-#nav .active dd {
+nav .active dd {
   background: #148fd5;
 }
 
@@ -117,11 +117,11 @@ nav dt {
   padding-left: 100px;
 }
 
-ul:nth-of-type(2) {
+article:nth-of-type(2) ul {
   padding-top: 25px;
 }
 
-ul:nth-of-type(2) li  {
+article:nth-of-type(2) li  {
   color: #b3b3b3;
   padding: 0 0 20px 135px;
   text-decoration: line-through;
@@ -133,22 +133,22 @@ ul:nth-of-type(2) li  {
 Main Article
 ============
 */
-#main_content {
+main {
   height: 100vh;
   margin-left: 403px;
   padding: 75px 15px;
 }
 
-#main_content h1,
-#main_content p {
+main h1,
+main p {
   display: inline-block;
 }
 
-#main_content h1 {
+main h1 {
   padding: 0 15px 35px 35px;
 }
 
-#main_content p {
+main p {
   background: #148fd5;
   border-radius: 20px;
   color: #fff;
@@ -169,12 +169,12 @@ input[type="checkbox"] {
 }
 
 #new_task:before {
-  content: url("plus_icon.png");
+  content: url("images/plus_icon.png");
   padding-right: 10px;
 }
 
-#main_content ul {
-  margin-right: 9.6%;
+main ul {
+  margin-right: 9.7%;
   padding: 15px 0 0 15px;
 }
 
@@ -184,7 +184,7 @@ input[type="checkbox"] {
 }
 
 #current_tasks li:after {
-  content: url("trash_icon.png");
+  content: url("images/trash_icon.png");
   cursor: pointer;
   float: right;
 }
@@ -194,7 +194,7 @@ input[type="checkbox"] {
 }
 
 .unchecked:before {
-  content: url("checkbox.png");
+  content: url("images/checkbox.png");
   padding-right: 10px;
 }
 
@@ -208,52 +208,136 @@ input[type="checkbox"] {
 }
 
 .checked:before {
-  content: url("sm_checked_box.png");
+  content: url("images/sm_checked_box.png");
   padding-right: 10px;
 }
 
+/*
+==========
+Form Modal
+==========
+*/
 .checkbox_hack {
-  display: inline;
+  /*display: none;*/
 }
 
-input:checked + .checkbox_hack {
-  content: url("modal.png");
-  height: 100%;
+form {
+  background: #fff;
+  font-weight: normal;
   position: absolute;
+    top: 110px;
+    left: 36.5%;
+  z-index: 2;
+}
+
+.checkbox_hack:before {
+  background: rgba(0, 0, 0, .4);
+  content: "";
+  position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left:  0;
+  z-index: 1;
+}
+
+fieldset {
+  height: 420px;
+  padding: 35px 20px 0 30px;
+  max-width: 600px;
+}
+
+form dt,
+form dd {
+  display: inline-block;
+}
+
+form dl {
+  width: 550px;
+}
+
+form dt {
+  width: 20%;
+}
+
+form dd {
+  padding: 0 0 25px 0;
+  width: 75%;
+}
+
+form input,
+form textarea {
+  font-size: 16px;
+}
+
+form label {
   width: 100%;
 }
+
+form input {
+  padding: 10px;
+  width: 100%;
+}
+
+form dl:nth-of-type(2) dd {
+  width: 23.4%;
+}
+
+form textarea {
+  border: 1px solid #b3b3b3;
+  height: 145px;
+  padding: 10px;
+  resize: none;
+  vertical-align: text-top;
+  width: 100%;
+}
+
+form input[type="submit"] {
+  background: #148fd5;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 15px;
+  width: 180px;
+}
+
 
 /*
 =============
 Media Queries
 =============
 */
+@media(max-width: 965px){
+  form {
+    left: 20%;
+  }
+}
 @media(max-width: 768px){
+  form {
+    left: 12%;
+  }
   label img {
     display: inline-block;
     position: relative;
       top: 25px;
       left: 52px;
   }
-  #nav {
+  nav {
     padding-top: 75px;
     position: absolute;
       left: -403px;
   }
-  #main_content {
+  main {
     margin-left: 0;
     padding-top: 53px;
   }
-  #nav_toggle:checked ~ #nav {
+  #nav_toggle:checked ~ nav {
     display: inline-block;
     position: absolute;
       left: 0;
   }
-  #nav_toggle:checked ~ #main_content {
+  #nav_toggle:checked ~ main {
     margin-left: 403px;
   }
   #nav_toggle:checked ~ label img {
@@ -263,8 +347,40 @@ Media Queries
   }
 }
 
+@media(max-width: 700px){
+  form {
+    left: 18%;
+  }
+  fieldset {
+    padding: 25px 0 0 20px;
+    width: 400px;
+  }
+  form dl {
+    width: 400px;
+  }
+  form dt,
+  form dd {
+    display: block;
+  }
+  form dl:nth-of-type(2) dd {
+    display: inline-block;
+    width: 27.8%;
+  }
+  form dd {
+    padding: 0 0 18px 0;
+    width: 90%;
+  }
+  form input[type="submit"] {
+    margin: 0;
+    width: 177px;
+  }
+}
+
 @media(max-width: 600px){
-  #nav {
+  form {
+    left: 12%;
+  }
+  nav {
     width: 303px;
   }
   .all_tasks_head {
@@ -273,7 +389,7 @@ Media Queries
   nav dt {
     padding-right: 63px;
   }
-  #nav_toggle:checked ~ #main_content {
+  #nav_toggle:checked ~ main {
     margin-left: 303px;
   }
   #nav_toggle:checked ~ label img {
@@ -284,19 +400,22 @@ Media Queries
 }
 
 @media(max-width: 500px){
-  #nav {
+  form {
+    left: 9%;
+  }
+  nav {
     width: 203px;
   }
   .indent {
     padding-left: 25px;
   }
-  #nav dl {
+  nav dl {
     padding: 10px 0 10px 60px;
   }
-  ul:nth-of-type(2) li {
+  article:nth-of-type(2) li {
     padding: 0 0 20px 60px;
   }
-  #nav_toggle:checked ~ #main_content {
+  #nav_toggle:checked ~ main {
     margin-left: 203px;
   }
   #nav_toggle:checked ~ label img {
@@ -306,8 +425,40 @@ Media Queries
   }
 }
 
+@media(max-width: 450px){
+  form {
+    left: 5%;
+  }
+}
+
+@media(max-width: 430px){
+  form {
+    left: 3%;
+  }
+}
+
 @media(max-width: 400px) {
-  #nav {
+  form {
+    left: 0;
+  }
+  fieldset {
+    padding: 20px 0 0 12px;
+    width: 400px;
+  }
+  form dl {
+    width: 390px;
+  }
+  form dd {
+    width: 95%;
+  }
+  form dl:nth-of-type(2) dd {
+    display: inline-block;
+    width: 29.4%;
+  }
+  form input[type="submit"] {
+    width: 183px;
+  }
+  nav {
     width: 180px;
   }
   .all_tasks_head {
@@ -316,16 +467,16 @@ Media Queries
   .indent {
     padding-left: 15px;
   }
-  #nav dl {
+  nav dl {
     padding: 10px 0 10px 50px;
   }
-  #nav dt {
+  nav dt {
     padding-right: 52px;
   }
-  ul:nth-of-type(2) li {
+  article:nth-of-type(2) li {
     padding: 0 0 20px 50px;
   }
-  #nav_toggle:checked ~ #main_content {
+  #nav_toggle:checked ~ main {
     margin-left: 165px;
   }
   #nav_toggle:checked ~ label img {
@@ -333,7 +484,7 @@ Media Queries
       top: 25px;
       left: 217px;
   }
-  #nav_toggle:checked ~ #main_content ul {
+  #nav_toggle:checked ~ main ul {
     margin-right: 0;
   }
 }

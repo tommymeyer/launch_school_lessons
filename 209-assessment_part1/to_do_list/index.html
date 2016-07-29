@@ -7,66 +7,118 @@
   </head>
 
   <body>
-    <main>
-      <input type="checkbox" id="nav_toggle" />
-      <label for="nav_toggle">
-        <img src="nav_icon.png" alt="Menu Icon" />
-      </label>
+    <div class="checkbox_hack">
+      <form action="#" method="post">
+        <fieldset>
+          <dl>
+            <dt>
+              <label for="title">Title</label>
+            </dt>
+            <dd>
+              <input type="text" name="title" value="Item 1" id="title" />
+            </dd>
+          </dl>
 
-      <article id="nav">
-        <nav>
-          <h2 class="indent all_tasks_head">All ToDos</h2>
-          <p>18</p>
+          <dl>
+            <dt>
+              <label>Due Date</label>
+            </dt>
+            <dd>
+              <input type="number" min="1" max="31" name="day" placeholder="Day" id="due_day" />
+            </dd>
+              /
+            <dd>
+              <input type="number" min="1" max="12" name="month" placeholder="Month" id="due_month" />
+            </dd>
+              /
+            <dd>
+              <input type="number" min="1900" max="2016" name="year" placeholder="Year" id="due_year" />
+            </dd>
+          </dl>
 
-          <ul>
-            <li>
-              <dl class="active">
-                <dt>02/16</dt>
-                <dd>8</dd>
-              </dl>
-            </li>
+          <dl>
+            <dt>
+              <label for="description">Description</label>
+            </dt>
+            <dd>
+              <textarea name="description" rows="10" cols="40" placeholder="Description" id="description"></textarea>
+            </dd>
+          </dl>
 
-            <li>
-              <dl>
-                <dt>03/16</dt>
-                <dd>2</dd>
-              </dl>
-            </li>
+          <dl>
+            <dt></dt>
+            <dd>
+              <input type="submit" name="save" value="Save" />
 
-            <li>
-              <dl>
-                <dt>04/16</dt>
-                <dd>1</dd>
-              </dl>
-            </li>
+              <input type="submit" name="complete" value="Mark As Complete" />
+            </dd>
+          </dl>
+        </fieldset>
+      </form>
+    </div>
 
-            <li>
-              <dl>
-                <dt>05/16</dt>
-                <dd>1</dd>
-              </dl>
-            </li>
+    <input type="checkbox" id="nav_toggle" />
+    <label for="nav_toggle">
+      <img src="nav_icon.png" alt="Menu Icon" />
+    </label>
 
-            <li>
-              <dl>
-                <dt>06/16</dt>
-                <dd>6</dd>
-              </dl>
-            </li>
-          </ul>
+    <nav>
+      <article>
+        <h2 class="indent all_tasks_head">All ToDos</h2>
+        <p>18</p>
 
-          <h2 class="indent completed_tasks_head">Completed</h2>
+        <ul>
+          <li>
+            <dl class="active">
+              <dt>02/16</dt>
+              <dd>8</dd>
+            </dl>
+          </li>
 
-          <ul>
-            <li>02/15</li>
-            <li>03/15</li>
-            <li>04/15</li>
-            <li>05/15</li>
-            <li>06/15</li>
-          </ul>
-        </nav>
+          <li>
+            <dl>
+              <dt>03/16</dt>
+              <dd>2</dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>04/16</dt>
+              <dd>1</dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>05/16</dt>
+              <dd>1</dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>06/16</dt>
+              <dd>6</dd>
+            </dl>
+          </li>
+        </ul>
       </article>
 
+      <article>
+        <h2 class="indent completed_tasks_head">Completed</h2>
+
+        <ul>
+          <li>02/15</li>
+          <li>03/15</li>
+          <li>04/15</li>
+          <li>05/15</li>
+          <li>06/15</li>
+        </ul>
+      </article>
+    </nav>
+
+    <main>
       <article id="main_content">
         <header>
           <h1>02/16</h1>
@@ -82,70 +134,68 @@
           <li>
             <label class="unchecked">
               <input type="checkbox" />
-              Item 1
+                Item 1
             </label>
           </li>
 
           <li>
             <label class="unchecked">
               <input type="checkbox" />
-              Item 2
-              <div class="checkbox_hack"></div>
+                Item 2
             </label>
           </li>
 
           <li>
             <label class="checked">
               <input type="checkbox" />
-              Item 3
+                Item 3
             </label>
           </li>
 
           <li>
             <label class="checked">
               <input type="checkbox" />
-              Item 4
+                Item 4
             </label>
-          </li>
+            </li>
 
           <li>
             <label class="checked">
               <input type="checkbox" />
-              Item 5
+                Item 5
             </label>
           </li>
 
           <li>
             <label class="unchecked">
               <input type="checkbox" />
-              Item 6
+                Item 6
             </label>
           </li>
 
           <li>
             <label class="unchecked">
               <input type="checkbox" />
-              Item 7
+                Item 7
             </label>
           </li>
 
           <li>
             <label class="unchecked">
               <input type="checkbox" />
-              Item 8
+                Item 8
             </label>
           </li>
 
           <li>
             <label class="unchecked">
               <input type="checkbox" />
-              Item 9
+                Item 9
             </label>
           </li>
         </ul>
       </article>
     </main>
-
   </body>
 
 </html>

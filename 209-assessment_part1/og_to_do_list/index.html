@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="checkbox_hack">
+      <form action="#" method="post">
+        <fieldset>
+          <dl>
+            <dt>
+              <label for="title">Title</label>
+            </dt>
+            <dd>
+              <input type="text" name="title" value="Item 1" id="title" />
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <label>Due Date</label>
+            </dt>
+            <dd>
+              <input type="number" min="1" max="31" name="day" placeholder="Day" id="due_day" />
+            </dd>
+              /
+            <dd>
+              <input type="number" min="1" max="12" name="month" placeholder="Month" id="due_month" />
+            </dd>
+              /
+            <dd>
+              <input type="number" min="1900" max="2016" name="year" placeholder="Year" id="due_year" />
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <label for="description">Description</label>
+            </dt>
+            <dd>
+              <textarea name="description" rows="10" cols="40" placeholder="Description" id="description"></textarea>
+            </dd>
+          </dl>
+
+          <dl>
+            <dt></dt>
+            <dd>
+              <input type="submit" name="save" value="Save" />
+
+              <input type="submit" name="complete" value="Mark As Complete" />
+            </dd>
+          </dl>
+        </fieldset>
+      </form>
+    </div>
+
+    <input type="checkbox" id="nav_toggle" />
+    <label for="nav_toggle">
+      <img src="images/nav_icon.png" alt="Menu Icon" />
+    </label>
+
+    <nav>
+      <article>
+        <h2 class="indent all_tasks_head">All ToDos</h2>
+        <p>18</p>
+
+        <ul>
+          <li>
+            <dl class="active">
+              <dt>02/16</dt>
+              <dd>8</dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>03/16</dt>
+              <dd>2</dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>04/16</dt>
+              <dd>1</dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>05/16</dt>
+              <dd>1</dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>06/16</dt>
+              <dd>6</dd>
+            </dl>
+          </li>
+        </ul>
+      </article>
+
+      <article>
+        <h2 class="indent completed_tasks_head">Completed</h2>
+
+        <ul>
+          <li>02/15</li>
+          <li>03/15</li>
+          <li>04/15</li>
+          <li>05/15</li>
+          <li>06/15</li>
+        </ul>
+      </article>
+    </nav>
+
+    <main>
+      <article id="main_content">
+        <header>
+          <h1>02/16</h1>
+          <p>8</p>
+        </header>
+
+        <label id="new_task">
+          <input type="checkbox" />
+          <a href="#">Add new to do</a>
+        </label>
+
+        <ul id="current_tasks">
+          <li>
+            <label class="unchecked">
+              <input type="checkbox" />
+                Item 1
+            </label>
+          </li>
+
+          <li>
+            <label class="unchecked">
+              <input type="checkbox" />
+                Item 2
+            </label>
+          </li>
+
+          <li>
+            <label class="checked">
+              <input type="checkbox" />
+                Item 3
+            </label>
+          </li>
+
+          <li>
+            <label class="checked">
+              <input type="checkbox" />
+                Item 4
+            </label>
+            </li>
+
+          <li>
+            <label class="checked">
+              <input type="checkbox" />
+                Item 5
+            </label>
+          </li>
+
+          <li>
+            <label class="unchecked">
+              <input type="checkbox" />
+                Item 6
+            </label>
+          </li>
+
+          <li>
+            <label class="unchecked">
+              <input type="checkbox" />
+                Item 7
+            </label>
+          </li>
+
+          <li>
+            <label class="unchecked">
+              <input type="checkbox" />
+                Item 8
+            </label>
+          </li>
+
+          <li>
+            <label class="unchecked">
+              <input type="checkbox" />
+                Item 9
+            </label>
+          </li>
+        </ul>
+      </article>
+    </main>
+  </body>
+
+</html>

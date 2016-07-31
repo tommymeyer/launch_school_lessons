@@ -308,29 +308,65 @@ form input[type="submit"] {
 Media Queries
 =============
 */
-@media(max-width: 965px){
-  form {
-    left: 20%;
-  }
-}
 @media(max-width: 768px){
+  body {
+    overflow-x: hidden;
+  }
   form {
-    left: 12%;
+    left: 3.5%;
+  }
+  fieldset {
+    padding: 0 0 0 12px;
+    width: 400px;
+  }
+  form dl {
+    width: 390px;
+  }
+  form dt {
+    padding-top: 25px;
+  }
+  form dd {
+    padding: 0;
+    width: 95%;
+  }
+  form dl:nth-of-type(2) dt {
+    display: block;
+  }
+  form dl:nth-of-type(2) dd {
+    width: 29.4%;
+  }
+  form dl:nth-of-type(4) dt {
+    padding: 0;
+  }
+  form input[type="submit"] {
+    margin: 0;
+    width: 183px;
   }
   label img {
-    display: inline-block;
-    position: relative;
+    display: block;
+    position: absolute;
       top: 25px;
       left: 52px;
   }
   nav {
-    padding-top: 75px;
     position: absolute;
-      left: -403px;
+      left: -335px;
+    width: 335px;
+  }
+  .all_tasks_head {
+    padding-right: 58px;
+  }
+  nav dt {
+    padding-right: 100px;
   }
   main {
     margin-left: 0;
-    padding-top: 53px;
+  }
+  #current_tasks li:after {
+    float: none;
+  }
+  #current_tasks label {
+    padding-right: 231px;
   }
   #nav_toggle:checked ~ nav {
     display: inline-block;
@@ -338,153 +374,29 @@ Media Queries
       left: 0;
   }
   #nav_toggle:checked ~ main {
-    margin-left: 403px;
+    margin-left: 335px;
+    padding-left: 0;
+    width: 429px;
+  }
+  #nav_toggle:checked ~ main h1 {
+    padding-left: 30px;
+  }
+  #nav_toggle:checked ~ main #new_task {
+    padding-left: 30px;
+  }
+  #nav_toggle:checked ~ main #current_tasks {
+    padding-left: 20px;
+  }
+  #nav_toggle:checked ~ main #current_tasks li {
+    padding-left: 10px;
+  }
+  #nav_toggle:checked ~ main label {
+    padding-right: 231px;
   }
   #nav_toggle:checked ~ label img {
-    position: relative;
+    position: absolute;
       top: 25px;
-      left: 455px;
+      left: 365px;
   }
-}
 
-@media(max-width: 700px){
-  form {
-    left: 18%;
-  }
-  fieldset {
-    padding: 25px 0 0 20px;
-    width: 400px;
-  }
-  form dl {
-    width: 400px;
-  }
-  form dt,
-  form dd {
-    display: block;
-  }
-  form dl:nth-of-type(2) dd {
-    display: inline-block;
-    width: 27.8%;
-  }
-  form dd {
-    padding: 0 0 18px 0;
-    width: 90%;
-  }
-  form input[type="submit"] {
-    margin: 0;
-    width: 177px;
-  }
-}
-
-@media(max-width: 600px){
-  form {
-    left: 12%;
-  }
-  nav {
-    width: 303px;
-  }
-  .all_tasks_head {
-    padding-right: 20px;
-  }
-  nav dt {
-    padding-right: 63px;
-  }
-  #nav_toggle:checked ~ main {
-    margin-left: 303px;
-  }
-  #nav_toggle:checked ~ label img {
-    position: relative;
-      top: 25px;
-      left: 355px;
-  }
-}
-
-@media(max-width: 500px){
-  form {
-    left: 9%;
-  }
-  nav {
-    width: 203px;
-  }
-  .indent {
-    padding-left: 25px;
-  }
-  nav dl {
-    padding: 10px 0 10px 60px;
-  }
-  article:nth-of-type(2) li {
-    padding: 0 0 20px 60px;
-  }
-  #nav_toggle:checked ~ main {
-    margin-left: 203px;
-  }
-  #nav_toggle:checked ~ label img {
-    position: relative;
-      top: 25px;
-      left: 255px;
-  }
-}
-
-@media(max-width: 450px){
-  form {
-    left: 5%;
-  }
-}
-
-@media(max-width: 430px){
-  form {
-    left: 3%;
-  }
-}
-
-@media(max-width: 400px) {
-  form {
-    left: 0;
-  }
-  fieldset {
-    padding: 20px 0 0 12px;
-    width: 400px;
-  }
-  form dl {
-    width: 390px;
-  }
-  form dd {
-    width: 95%;
-  }
-  form dl:nth-of-type(2) dd {
-    display: inline-block;
-    width: 29.4%;
-  }
-  form input[type="submit"] {
-    width: 183px;
-  }
-  nav {
-    width: 180px;
-  }
-  .all_tasks_head {
-    padding-right: 10px;
-  }
-  .indent {
-    padding-left: 15px;
-  }
-  nav dl {
-    padding: 10px 0 10px 50px;
-  }
-  nav dt {
-    padding-right: 52px;
-  }
-  article:nth-of-type(2) li {
-    padding: 0 0 20px 50px;
-  }
-  #nav_toggle:checked ~ main {
-    margin-left: 165px;
-  }
-  #nav_toggle:checked ~ label img {
-    position: relative;
-      top: 25px;
-      left: 217px;
-  }
-  #nav_toggle:checked ~ main ul {
-    margin-right: 0;
-  }
 }

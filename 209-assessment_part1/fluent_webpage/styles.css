@@ -7,12 +7,25 @@ General Styles
 ==============
 */
 body {
-  font: 300 16px/1.4 "Open Sans", Helvetica, sans-serif;
+  font: normal 16px/1.4 "Open Sans", Helvetica, sans-serif;
+}
+
+h1 {
+  color: #00B7B7;
+  font-size: 2.125em;
+}
+
+h2 {
+  font-size: 1.4375em;
 }
 
 a {
   color: #1010DD;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 
@@ -28,13 +41,12 @@ header {
 
 header img {
   background: #00B7B7;
-  display: block;
   padding: 8px 1026px 11px 285px;
 }
 
 header h1 {
   display: inline-block;
-  padding: 20px 0 0 285px;
+  padding: 15px 0 0 285px;
   vertical-align: middle;
 }
 
@@ -43,7 +55,7 @@ header p {
   font-size: 0.92em;
   font-weight: lighter;
   letter-spacing: 1.2px;
-  padding-top: 15px;
+  padding-top: 4px;
   padding-left: 54px;
   text-transform: uppercase;
   vertical-align: middle;
@@ -55,7 +67,7 @@ header p::first-line {
 }
 
 header nav {
-  padding: 29px 0 8px 265px;
+  padding: 24px 0 8px 265px;
 }
 
 header li {
@@ -63,17 +75,17 @@ header li {
 }
 
 header li a {
-  border-right: 1px solid #8C8C8C;
+  border-right: 0.5px solid #8C8C8C;
   color: #ddd;
-  font-size: 0.96em;
-  letter-spacing: 0.5px;
+  font-weight: lighter;
   padding: 0 20px;
+}
+
+header li a:hover {
+  background: #00B7B7;
+  text-decoration: none;
 }
 
 header li:last-of-type a {
   border-right: none;
-}
-
-header a:hover {
-  background: #00B7B7;
 }

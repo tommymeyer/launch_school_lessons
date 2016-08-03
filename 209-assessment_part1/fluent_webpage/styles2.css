@@ -1,0 +1,107 @@
+@import url("meyer_reset2.css");
+
+
+/*
+==============
+General Styles
+==============
+*/
+body {
+  font: normal 16px/1.4 "Open Sans", Helvetica, sans-serif;
+}
+
+h1 {
+  color: #00B7B7;
+  font-size: 2.125em;
+}
+
+h2 {
+  font-size: 1.4375em;
+}
+
+a {
+  color: #1010DD;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/*
+======
+Header
+======
+*/
+header {
+  background: #000;
+  color: #ccc;
+}
+
+.logo_head {
+  background: #00B7B7;
+  width: 100%;
+}
+
+.row {
+  margin: 0 auto;
+  max-width: 870px;
+  width: 100%;
+}
+
+.logo_head img {
+  padding: 8px 0 7px 0;
+}
+
+.main_head {
+  padding: 20px 0;
+}
+
+#fluent_logo {
+  float: left;
+}
+
+#event_description {
+  float: left;
+  font-size: 0.92em;
+  font-weight: lighter;
+  letter-spacing: 1.2px;
+  padding-left: 60px;
+  text-transform: uppercase;
+}
+
+nav {
+  width: 100%;
+}
+
+.head_nav li {
+  border-right: 0.5px solid #8c8c8c;
+  display: inline-block;
+  font-weight: lighter;
+}
+
+.head_nav li:last-of-type {
+  border-right: none;
+}
+
+.head_nav a {
+  color: #ddd;
+  padding: 0 20px;
+}
+
+.head_nav a:hover {
+  background: #00b7b7;
+  text-decoration: none;
+}
+
+.head_nav li:first-of-type a {
+  margin-left: -20px;
+}
+
+nav ul:before,
+nav ul:after {
+  clear: both;
+  content: "";
+  display: block;
+}

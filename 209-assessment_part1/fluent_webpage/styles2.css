@@ -66,14 +66,26 @@ header {
   padding: 20px 0 0 0;
 }
 
+header input[type="checkbox"] {
+  display: none;
+}
+
+header label {
+  cursor: pointer;
+}
+
+header label img {
+  display: none;
+}
+
 #fluent_logo {
   float: left;
+  max-width: 283px;
   padding: 0 0 0 20px;
 }
 
 #fluent_logo img {
   height: auto;
-  width: 283px;
 }
 
 #event_description {
@@ -233,7 +245,7 @@ article header h2 {
 #web_awards {
   float: right;
   height: 167px;
-  margin: 10px;
+  margin: 10px 0 10px 25px;
   width: 250px;
 }
 
@@ -357,7 +369,7 @@ General Footer
 footer {
   background: #000;
   min-height: 330px;
-  padding: 0 20px;
+  padding: 0 20px 40px 20px;
   width: 100%;
 }
 
@@ -385,6 +397,7 @@ footer dl {
   display: inline-block;
   font-size: 0.8em;
   letter-spacing: 0.5px;
+  margin-left: 20px;
   padding: 18% 0 0 0;
   text-align: left;
   vertical-align: top;
@@ -459,9 +472,72 @@ footer:after {
   letter-spacing: 1.5px;
   margin: 0 auto;
   max-width: 780px;
-  padding: 30px 20px;
+  padding: 30px 0;
 }
 
 .copyright a {
   color: #EDEDED;
+}
+
+
+/*
+=============
+Media Queries
+=============
+*/
+@media(max-width: 918px) {
+  nav {
+    /*display: none;*/
+  }
+  nav ul {
+    background: #333;
+    border-top: 1px solid #8c8c8c;
+    display: block;
+    height: auto;
+    margin-left: 4.5px;
+    position: absolute;
+      left: 0;
+    width: 99%;
+  }
+  nav ul li {
+    float: left;
+    position: relative;
+    width: 50%;
+  }
+  .head_nav li {
+    border-right: 0;
+    margin: 0;
+    /*padding-left: 4px;*/
+  }
+  .head_nav a {
+    display: inline-block;
+    width: 100%;
+  }
+  .head_nav li a {
+    border-right: 1px solid #8c8c8c;
+    border-bottom: 1px solid #8c8c8c;
+    padding: 8px 0 8px 25px;
+  }
+  .head_nav li:first-of-type a {
+    margin-left: 0;
+  }
+  header label img {
+    display: inline-block;
+    position: absolute;
+      top: 81px;
+      left: 93%;
+  }
+  #fluent_logo {
+    display: block;
+    float: none;
+  }
+  #event_description {
+    display: block;
+    float: none;
+    font-size: 0.85em;
+    letter-spacing: 0.8px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 7px;
+  }
 }

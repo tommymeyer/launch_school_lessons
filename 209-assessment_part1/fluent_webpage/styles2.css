@@ -7,7 +7,7 @@ General Styles
 ==============
 */
 body {
-  font: normal 16px/1.5 "open Sans", Helvetica, sans-serif;
+  font: normal 16px/1.5 "Open Sans", Helvetica, sans-serif;
 }
 
 h1 {
@@ -128,6 +128,12 @@ nav ul:after {
   display: block;
 }
 
+
+/*
+============
+Main Content
+============
+*/
 main {
   padding: 0 20px;
 }
@@ -151,14 +157,16 @@ article header h2 {
 }
 
 .byline {
-  display: inline-block;
-  font-size: 0.875em;
-  padding: 0 0 20px 5px;
-  vertical-align: top;
+  font-size: 0.844em;
+  padding: 0 0 20px 0;
+}
+
+.byline img[src="images/josh_simmons.jpg"] {
+  float: left;
+  margin: 0 10px 5px 0;
 }
 
 .social_icons {
-  display: inline-block;
   margin-top: 5px;
 }
 
@@ -170,7 +178,6 @@ article header h2 {
 .btn {
   display: inline-block;
   font-size: 0.75em;
-  letter-spacing: 0.5px;
   margin-right: 1px;
 }
 
@@ -179,8 +186,12 @@ article header h2 {
   vertical-align: middle;
 }
 
-.btn:hover {
-  -webkit-filter: brightness(85%);
+.twitter_btn:hover {
+  background: #0c7abf;
+}
+
+.like_btn:hover {
+  background: #365899;
 }
 
 .twitter_btn,
@@ -190,12 +201,13 @@ article header h2 {
 
 .twitter_btn {
   background: #1B95E0;
+  font-weight: bold;
   padding: 2px 7px 2px 6px;
 }
 
 .like_btn {
   background: #4267B2;
-  padding: 2px 6px 2px 3px;
+  padding: 2px 7px 2px 4px;
 }
 
 .tweet_icon,
@@ -211,7 +223,7 @@ article header h2 {
 
 .like_icon {
   height: 16px;
-  width: 16px;
+  width: 17px;
 }
 
 .paras p {
@@ -239,6 +251,12 @@ main article:nth-of-type(3) {
   padding-bottom: 20px;
 }
 
+
+/*
+================
+Sponsors Content
+================
+*/
 section {
   border-top: 2px solid #CACACA;
   text-align: center;
@@ -257,7 +275,7 @@ section p {
   letter-spacing: 0.75px;
   margin: 10px auto 35px auto;
   padding: 6px 0 4px 0;
-  width: 825px;
+  max-width: 825px;
 }
 
 .sponsor:first-of-type p {
@@ -284,20 +302,27 @@ section a {
   padding-bottom: 15px;
 }
 
+
+/*
+==============
+Sponsor Footer
+==============
+*/
 .section_foot {
   border-top: 1px solid #CACACA;
   margin: 0 auto;
-  width: 875px;
+  max-width: 875px;
 }
 
 .section_foot ul {
-  padding: 10px 0 20px 0;
+  padding: 10px 0 20px 35px;
 }
 
 .section_foot li {
   display: inline-block;
+  padding-left: 20px;
   vertical-align: top;
-  width: 33%;
+  width: 32%;
 }
 
 .section_foot h4,
@@ -323,35 +348,45 @@ section a {
   background: none;
 }
 
+
+/*
+==============
+General Footer
+==============
+*/
 footer {
   background: #000;
-  height: 332px;
+  min-height: 330px;
+  padding: 0 20px;
   width: 100%;
 }
 
 .ad_space {
-  height: auto;
   margin: 0 auto;
-  max-width: 720px;
+  max-width: 760px;
   max-height: 90px;
 }
 
 .ad_space img {
-  height: 100%;
-  margin: 5px 0 20px 0;
+  margin: 5px 0 0 0;
+  padding: 0 20px;
   width: 100%;
 }
 
 .information_links {
   margin: 0 auto;
-  max-width: 780px;
+  max-width: 890px;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
 }
 
 footer dl {
   display: inline-block;
   font-size: 0.8em;
   letter-spacing: 0.5px;
-  padding: 30px 50px 0 0;
+  padding: 18% 0 0 0;
+  text-align: left;
   vertical-align: top;
 }
 
@@ -371,11 +406,16 @@ footer dd a:hover {
 
 footer ul {
   display: inline-block;
-  padding-top: 30px;
+  padding: 30px 0;
+}
+
+footer ul:nth-of-type(2) {
+  vertical-align: top;
 }
 
 footer ul li {
-  padding: 0 0 10px 0;
+  padding: 0 0 15px 0;
+  text-align: left;
 }
 
 footer ul img {
@@ -390,13 +430,18 @@ footer ul a {
   vertical-align: middle;
 }
 
-footer ul li:nth-of-type(3) {
-  margin-bottom: -127px;
+.foot_column {
+  float: left;
+  padding: 0 15px 0 0;
+  vertical-align: text-top;
+  width: 20%;
 }
 
-footer ul li:nth-of-type(4),
-footer ul li:nth-of-type(5) {
-  text-indent: 145px;
+footer:before,
+footer:after {
+  clear: both;
+  content: "";
+  display: block;
 }
 
 .copyright {
@@ -404,7 +449,7 @@ footer ul li:nth-of-type(5) {
   color: #EDEDED;
   font-size: 0.8em;
   font-weight: lighter;
-  height: 110px;
+  min-height: 110px;
   margin: 0 0 14px 0;
   text-align: center;
   width: 100%;
@@ -414,7 +459,7 @@ footer ul li:nth-of-type(5) {
   letter-spacing: 1.5px;
   margin: 0 auto;
   max-width: 780px;
-  padding-top: 30px;
+  padding: 30px 20px;
 }
 
 .copyright a {

@@ -2,92 +2,145 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>The Web Platform in Practice: JavaScript, HTML5 & CSS conference: O'Reilly Fluent, March 07 - 10, 2016, San Francisco, CA</title>
+    <title>The Web Platform in Practice: JavaScript, HTML5 &amp; CSS conference: O'Reilly Fluent, March 07 - 10, 2016, San Francisco, CA</title>
     <link rel="stylesheet" href="styles.css" />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <header>
-        <a href="#"><img src="images/oreilly_logo.png" alt="Oreilly" /></a>
+      <header>
+        <div class="logo_head">
+          <div class="row">
+            <a href="#" class=""><img src="images/oreilly_logo.png" alt="Oreilly" id="logo" /></a>
+          </div>
+        </div>
 
-      <div>
-        <h1><iframe src="images/fluent2015_svg_logo.svg" width="285" height="80"></iframe></h1>
+        <input type="checkbox" id="nav_toggle" />
+        <label for="nav_toggle">
+          <img src="images/gray_menu_icon.png" alt="Navigation Icon" />
+        </label>
 
-        <p>
-          The Web Platform
-          <br />
-          March 7–8, 2016: Training
-          <br />
-          March 8–10, 2016: Conference
-          <br />
-          San Francisco, CA
-        </p>
-      </div>
+        <div class="main_head">
+          <div class="row">
+            <div id="fluent_logo">
+              <h1><a href="#"><img src="images/fluent2015_svg_logo.svg" alt="Fluent Logo" /></a></h1>
+            </div>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Schedule</a>
-          </li><!--
-       --><li>
-            <a href="#">Speakers</a>
-          </li><!--
-       --><li>
-            <a href="#">Events</a>
-          </li><!--
-       --><li>
-            <a href="#">Exhibit Hall</a>
-          </li><!--
-       --><li>
-            <a href="#">Venue</a>
-          </li><!--
-       --><li>
-            <a href="#">About</a>
-          </li><!--
-       --><li>
-            <a href="#">Blog</a>
-          </li><!--
-       --><li>
-            <a href="#">Account</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+            <div id="event_description">
+              <p>
+                The Web Platform
+                <br />
+                March 7–8, 2016: Training
+                <br />
+                March 8–10, 2016: Conference
+                <br />
+                San Francisco, CA
+              </p>
+            </div>
+          </div>
+        </div>
 
-    <main>
+        <div class="head_nav">
+          <div class="row">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Schedule</a>
+                </li><!--
+             --><li>
+                  <a href="#">Speakers</a>
+                </li><!--
+             --><li>
+                  <a href="#">Events</a>
+                </li><!--
+             --><li>
+                  <a href="#">Exhibit Hall</a>
+                </li><!--
+             --><li>
+                  <a href="#">Venue</a>
+                </li><!--
+             --><li>
+                  <a href="#">About</a>
+                </li><!--
+             --><li>
+                  <a href="#">Blog</a>
+                </li><!--
+             --><li>
+                  <a href="#">Account</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+    <main class="row">
         <h1>Fluent Blog</h1>
 
         <p>Your field guide to getting the most out of Fluent—news, updates, and important resources.</p>
 
       <article>
-        <h2><a href="#">Who will you nominate for the O'Reilly Web Platform Awards?</a></h2>
+        <header>
+          <h2><a href="#">Who will you nominate for the O'Reilly Web Platform Awards?</a></h2>
 
-        <img src="images/josh_simmons.jpg" alt="Josh Simmons" />
-        <p>Josh Simmons | <a href="#">@joshsimmons</a> | 17 December 2015</p>
+          <div class="byline">
+            <img src="images/josh_simmons.jpg" alt="Josh Simmons" />
 
-        <p>
-          At Fluent, we celebrate the Web Platform and the communities that power each of its core technologies including JavaScript, HTML, and CSS, so we introduced the O'Reilly Web Platform Awards in order to highlight individuals for whom the Web is truly a labor of love. O'Reilly Web Platform Award trophies from 2015
-          <br />
-          The description of the award is straightforward:
-          <br />
-          <strong><em>The awards recognize individual contributors who have demonstrated exceptional leadership, creativity,  collaboration in the development of JavaScript, HTML, CSS, and the supporting Web ecosystem.</em></strong>
-          <br />
-          <a href="#">Read More</a>
-        </p>
+            <p>Josh Simmons | <a href="#">@joshsimmons</a> | 17 December 2015</p>
+
+            <div class="social_icons">
+              <div class="btn twitter_btn">
+                <a href="#"><img src="images/twitter.png" alt="Tweet" class="tweet_icon" />
+                <p>Tweet</p></a>
+              </div>
+
+              <div class="btn like_btn">
+                <a href="#"><img src="images/like-icon.png" alt="Like" class="like_icon" />
+                <p>Like &nbsp;8</p></a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="paras">
+          <p>At Fluent, we celebrate the Web Platform and the communities that power each of its core technologies including JavaScript, HTML, and CSS, so we introduced the O'Reilly Web Platform Awards in order to highlight individuals for whom the Web is truly a labor of love.<img src="images/web-platform-awards.jpg" alt="Web Platform Awards" id="web_awards" /></p>
+
+          <p>The description of the award is straightforward:</p>
+
+          <p><strong><em>The awards recognize individual contributors who have demonstrated exceptional leadership, creativity, and collaboration in the development of JavaScript, HTML, CSS, and the supporting Web ecosystem.</em></strong></p>
+
+          <p><a href="#">Read More</a></p>
+        </div>
       </article>
 
       <article>
-        <h2><a href="#">Join the Fluent Community on Slack</a></h2>
+        <header>
+          <h2><a href="#">Join the Fluent Community on Slack</a></h2>
 
-        <img src="images/josh_simmons.jpg" alt="Josh Simmons" />
-        <p>Josh Simmons | <a href="#">@joshsimmons</a> | 20 October 2015</p>
+          <div class="byline">
+            <img src="images/josh_simmons.jpg" alt="Josh Simmons" />
 
-        <p>
-          People love the "hallway track" and networking with their peers at conferences, and now that doesn't have to begin and end with the conference. We're launching a Slack team, with an IRC channel, for Fluent attendees.
-          <br />
-          You can use Slack to:
-          <br />
+            <p>Josh Simmons | <a href="#">@joshsimmons</a> | 17 December 2015</p>
+
+            <div class="social_icons">
+              <div class="btn twitter_btn">
+                <a href="#"><img src="images/twitter.png" alt="Tweet" class="tweet_icon" />
+                <p>Tweet</p></a>
+              </div>
+
+              <div class="btn like_btn">
+                <a href="#"><img src="images/like-icon.png" alt="Like" class="like_icon" />
+                <p>Like 0</p></a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="paras">
+          <p>People love the "hallway track" and networking with their peers at conferences, and now that doesn't have to begin and end with the conference. We're launching a Slack team, with an IRC channel, for Fluent attendees.</p>
+
+          <p>You can use Slack to:</p>
+
           <ul>
             <li>Meet fellow attendees before, during, and after the conference.</li>
             <li>Organize group lunches and dinners.</li>
@@ -96,33 +149,229 @@
             <li>Discover related events and speaking opportunities.</li>
             <li>Report issues to the conference organizing team.</li>
           </ul>
-          <br />
-          <a href="#">Read More</a>
-        </p>
+
+          <p><a href="#">Read More</a></p>
+        </div>
       </article>
 
       <article>
-        <h2><a href="#">Join the Fluent Program Chairs for CFP Office Hours</a></h2>
+        <header>
+          <h2><a href="#">Join the Fluent Program Chairs for CFP Office Hours</a></h2>
 
-        <img src="images/josh_simmons.jpg" alt="Josh Simmons" />
-        <p>Josh Simmons | <a href="#">@joshsimmons</a> | 17 December 2015</p>
+          <div class="byline">
+            <img src="images/josh_simmons.jpg" alt="Josh Simmons" />
 
-        <p>
-          If there’s anything 31 years in publishing and 17 in conference organizing has taught us at O’Reilly, it’s that everyone can learn from everyone else. That’s why we’re always looking for fresh perspectives, including new speakers.
-          <br />
-          To that end, we're running an online event where you can chat with the Fluent Program Chairs, Simon St. Laurent and Peter Cooper. Whether you're curious about the program, confused by the CFP form, or just looking for guidance as a new speaker, we can help.
-          <br />
-          Join us for a live chat this Friday, September 18 from 10am to 12pm Pacific Time, then complete your proposal. The CFP closes Monday, September 21 at midnight.
-          <br />
-          <a href="#">Read More</a>
-        </p>
-      </article>
+            <p>Josh Simmons | <a href="#">@joshsimmons</a> | 17 December 2015</p>
 
-      <article>
+            <div class="social_icons">
+              <div class="btn twitter_btn">
+                <a href="#"><img src="images/twitter.png" alt="Tweet" class="tweet_icon" />
+                <p>Tweet</p></a>
+              </div>
 
+              <div class="btn like_btn">
+                <a href="#"><img src="images/like-icon.png" alt="Like" class="like_icon">
+                <p>Like 0</p></a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="paras">
+          <p>If there’s anything 31 years in publishing and 17 in conference organizing has taught us at O’Reilly, it’s that everyone can learn from everyone else. That’s why we’re always looking for fresh perspectives, including new speakers.</p>
+
+          <p>To that end, we're running an online event where you can chat with the Fluent Program Chairs, Simon St. Laurent and Peter Cooper. Whether you're curious about the program, confused by the CFP form, or just looking for guidance as a new speaker, we can help.</p>
+
+          <p>Join us for a live chat this <strong>Friday, September 18 from 10am to 12pm Pacific Time</strong>, then <a href="#">complete your proposal</a>. The CFP closes <strong>Monday, September 21 at midnight</strong>.</p>
+
+          <p><a href="#">Read More</a></p>
+        </div>
       </article>
     </main>
 
+    <section>
+      <div id="plat_sponsor" class="sponsor">
+        <p>Platinum Sponsor</p>
+        <a href="https://console.ng.bluemix.net/registration/?cm_mmc=CloudDeveloperNA-_-IBMFluent-_-3-7-16::3-10-16-_-FluentEvent"  target="_blank"><img src="images/sponsors/ibm.gif" alt="IBM" /></a>
+      </div>
+
+      <div id="gold_sponsor" class="sponsor">
+        <p>Gold Sponsors</p>
+        <a href="https://github.com" target="_blank"><img src="images/sponsors/github-1.png" alt="Github" /></a>
+
+        <a href="https://newrelic.com" target="_blank"><img src="images/sponsors/newrelic.png" alt="New Relic" /></a>
+
+        <a href="http://saucelabs.com" target="_blank"><img src="images/sponsors/sauce-labs.png" alt="Sauce Labs" /></a>
+
+        <a href="http://www.softlayer.com" target="_blank"><img src="images/sponsors/softlayer-ibm.png" alt="Softlayer" /></a>
+      </div>
+
+      <div id="silv_sponsor" class="sponsor">
+        <p>Silver Sponsors</p>
+        <a href="https://www.craigslist.org/about/craigslist_is_hiring" target="_blank"><img src="images/sponsors/craigslist.gif" alt="Craigslist" /></a>
+
+        <a href="https://www.domo.com" target="_blank"><img src="images/sponsors/domo.gif" alt="Domo" /></a>
+
+        <a href="http://www.exaptive.com" target="_blank"><img src="images/sponsors/exaptive.png" alt="Exaptive" /></a>
+
+        <a href="https://www.heroku.com" target="_blank"><img src="images/sponsors/heroku-2.png" alt="Heroku" /></a>
+
+        <a href="https://software.intel.com/en-us/intel-xdk" target="_blank"><img src="images/sponsors/intel.gif" alt="Intel" /></a>
+
+        <a href="http://www.microsoft.com/en-us" target="_blank"><img src="images/sponsors/microsoft_2012.gif" alt="Microsoft" /></a>
+
+        <a href="http://www.sap.com" target="_blank"><img src="images/sponsors/sap.png" alt="SAP" /></a>
+
+        <a href="https://strongloop.com" target="_blank"><img src="images/sponsors/strongloop.png" alt="Strong Loop" /></a>
+      </div>
+
+      <div id="exhibitors" class="sponsor">
+        <p>Exhibitors</p>
+        <a href="https://www.accenture.com/us-en" target="_blank"><img src="images/sponsors/accenture150.png" alt="Accenture 150" width="120" /></a>
+
+        <a href="http://www.circonus.com/" target="_blank"><img src="images/sponsors/circonus.png" alt="Circonus" /></a>
+
+        <a href="https://www.codeschool.com/" target="_blank"><img src="images/sponsors/codeschool-vertical.png" alt="Code School" /></a>
+
+        <a href="https://enonic.com/" target="_blank"><img src="images/sponsors/enonic.png" alt="Enonic" /></a>
+
+        <a href="http://www.jetbrains.com/" target="_blank"><img src="images/sponsors/jetbrains.png" alt="Jet Brains" /></a>
+
+        <a href="https://www.makersquare.com/" target="_blank"><img src="images/sponsors/makersquare.png" alt="Maker Square" /></a>
+
+        <a href="https://www.openshift.com/" target="_blank"><img src="images/sponsors/openshift.png" alt="Open Shift" /></a>
+
+        <a href="http://rangle.io/" target="_blank"><img src="images/sponsors/rangle-io.png" alt="Rangle.io" /></a>
+
+        <a href="https://www.shapesecurity.com/" target="_blank"><img src="images/sponsors/shape.png" alt="Shape Security" /></a>
+
+        <a href="https://www.solanolabs.com/" target="_blank"><img src="images/sponsors/solano-labs.png" alt="Solano Labs" /></a>
+
+        <a href="http://www.telerik.com/" target="_blank"><img src="images/sponsors/telerik_horizontal.png" alt="Telerik" /></a>
+
+        <a href="http://vitamintalent.com/" target="_blank"><img src="images/sponsors/vitamin-t.png" alt="Vitamin T" /></a>
+
+        <a href="http://wijmo.com/" target="_blank"><img src="images/sponsors/wijmo_blue.png" alt="Wijmo" /></a>
+      </div>
+
+      <div id="innovators" class="sponsor">
+        <p>Innovators</p>
+
+        <a href="http://cloudinary.com/" target="_blank"><img src="images/sponsors/cloudinary.png" alt="Cloudinary" /></a>
+
+        <a href="https://www.functionize.com/" target="_blank"><img src="images/sponsors/functionize.png" alt="Functionize" /></a>
+
+        <a href="https://nodesource.com/" target="_blank"><img src="images/sponsors/nodesource.png" alt="Node Source" /></a>
+
+        <a href="https://getsentry.com/welcome/" target="_blank"><img src="images/sponsors/sentry.png" alt="Sentry" /></a>
+
+        <a href="https://www.sparkpost.com/" target="_blank"><img src="images/sponsors/sparkpost.png" alt="Spark Post" /></a>
+
+        <a href="https://www.tinymce.com/" target="_blank"><img src="images/sponsors/tinymce-3.png" alt="Tiny MCE" /></a>
+
+        <a href="https://vaadin.com/home" target="_blank"><img src="images/sponsors/vaadin.jpg" alt="Vaadin" /></a>
+
+        <a href="https://www.xhtmlchop.com/" target="_blank"><img src="images/sponsors/xchop.png" alt="X Chop" /></a>
+      </div>
+
+      <div id="diversity_sponsor" class="sponsor">
+        <p>Diversity &amp; Inclusion Scholarship Sponsor</p>
+
+        <a href="https://www.craigslist.org/about/craigslist_is_hiring" target="_blank"><img src="images/sponsors/craigslist.gif" alt="Craigslist" /></a>
+      </div>
+    </section>
+
+    <div class="section_foot">
+      <ul>
+        <li class="spons_opps">
+          <h4>Sponsorship Opportunities</h4>
+
+          <p>For exhibition and sponsorship opportunities, email <a href="#">fluent@oreilly.com</a></p>
+        </li>
+
+        <li class="part_opps">
+          <h4>Partnership Opportunities</h4>
+
+          <p>For information on trade opportunities with O'Reilly conferences, email <a href="#">partners@oreilly.com</a></p>
+        </li>
+
+        <li class="contact_us">
+          <h4>Contact Us</h4>
+
+          <p>View a complete list of <a href="http://conferences.oreilly.com/fluent/javascript-html-us/public/content/contact">Fluent contacts</a></p>
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+      <div class="ad_space"><a href="#"><img src="images/sponsors/ad700.png" alt="" /></a></div>
+
+      <div class="information_links">
+        <div class="foot_column">
+          <dl>
+            <dt>Information</dt>
+
+            <dd><a href="#">About</a></dd>
+            <dd><a href="#">Fluent 2015</a></dd>
+            <dd><a href="#">Diversity</a></dd>
+            <dd><a href="#">Code of Conduct</a></dd>
+            <dd><a href="#">Privacy Policy</a></dd>
+          </dl>
+        </div>
+
+        <div class="foot_column">
+          <dl>
+            <dt>More O'Reilly Events</dt>
+
+            <dd><a href="#">Artificial Intelligence</a></dd>
+            <dd><a href="#">Design Conference</a></dd>
+            <dd><a href="#">Next:Economy</a></dd>
+            <dd><a href="#">OSCON</a></dd>
+            <dd><a href="#">Security Conference</a></dd>
+            <dd><a href="#">Software Architecture</a></dd>
+            <dd><a href="#">Strata + Hadoop World</a></dd>
+            <dd><a href="#">Velocity Conference</a></dd>
+          </dl>
+        </div>
+
+        <div class="foot_column">
+          <dl>
+            <dt>More O'Reilly Sites</dt>
+
+            <dd><a href="#">O'Reilly Conferences</a></dd>
+            <dd><a href="#">oreilly.com</a></dd>
+            <dd><a href="#">O'Reilly Radar</a></dd>
+            <dd><a href="#">O'Reilly Video</a></dd>
+            <dd><a href="#">O'Reilly Webcasts</a></dd>
+            <dd><a href="#">O'Reilly on YouTube</a></dd>
+          </dl>
+        </div>
+
+        <div class="foot_column">
+          <ul>
+            <li><a href="#"><img src="images/social/solid2015_social_twitter.svg" alt="Twitter" width="32" height="32" />Twitter</a></li>
+
+            <li><a href="#"><img src="images/social/solid2015_social_facebook.svg" alt="Facebook" width="32" height="32" />Facebook</a></li>
+
+            <li><a href="#"><img src="images/social/solid2015_social_youtube.svg" alt="YouTube" width="32" height="32" />YouTube</a></li>
+          </ul>
+        </div>
+
+        <div class="foot_column">
+          <ul>
+            <li><a href="#"><img src="images/social/solid2015_social_google_plus.svg" alt="Google Plus" width="32" height="32" />Google+</a></li>
+
+            <li><a href="#"><img src="images/social/solid2015_social_linkedin.svg" alt="LinkedIn" width="32"  height="32" />LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright">
+      <p>
+        ©2016, O'Reilly Media, Inc.&nbsp; • &nbsp;(800) 889-8969 or (707) 827-7019&nbsp; • &nbsp;Monday-Friday 7:30am-5pm PT&nbsp; • &nbsp;All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.&nbsp; • &nbsp;<a href="#">conf-webmaster@oreilly.com</a>
+      </p>
+    </div>
   </body>
 
 </html>

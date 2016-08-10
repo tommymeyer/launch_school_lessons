@@ -80,7 +80,7 @@ header label img {
 
 #fluent_logo {
   float: left;
-  padding: 0 0 0 20px;
+  padding: 0 0 7px 20px;
 }
 
 #event_description {
@@ -193,14 +193,6 @@ article header h2 {
   vertical-align: middle;
 }
 
-.twitter_btn:hover {
-  background: #0c7abf;
-}
-
-.like_btn:hover {
-  background: #365899;
-}
-
 .twitter_btn,
 .like_btn {
   border-radius: 3px;
@@ -215,6 +207,14 @@ article header h2 {
 .like_btn {
   background: #4267B2;
   padding: 2px 7px 2px 4px;
+}
+
+.twitter_btn:hover {
+  background: #0c7abf;
+}
+
+.like_btn:hover {
+  background: #365899;
 }
 
 .tweet_icon,
@@ -481,6 +481,31 @@ Media Queries
 =============
 */
 @media(max-width: 918px) {
+  header label img {
+    display: block;
+    margin-right: 20px;
+    position: absolute;
+      top: 81px;
+      right: 0;
+    width: 40px;
+  }
+  #fluent_logo {
+    display: block;
+    float: none;
+    width: 65%;
+  }
+  #fluent_logo img {
+    display: block;
+    max-width: 279px;
+    width: 100%;
+  }
+  #event_description {
+    display: block;
+    float: none;
+    font-size: 0.85em;
+    letter-spacing: 0.8px;
+    padding: 8px 0 10px 20px;
+  }
   nav {
     display: none;
   }
@@ -513,27 +538,6 @@ Media Queries
   }
   .head_nav li:first-of-type a {
     margin-left: 0;
-  }
-  header label img {
-    display: block;
-    margin-right: 20px;
-    position: absolute;
-      top: 81px;
-      right: 0;
-    width: 40px;
-  }
-  #fluent_logo {
-    display: block;
-    float: none;
-  }
-  #event_description {
-    display: block;
-    float: none;
-    font-size: 0.85em;
-    letter-spacing: 0.8px;
-    padding-top: 4px;
-    padding-left: 20px;
-    padding-bottom: 8px;
   }
   #nav_toggle:checked ~ .head_nav {
     height: 0;

@@ -42,7 +42,7 @@ nav {
   background: #464f77;
   float: left;
   height: 100vh;
-  padding: 75px 0 20px 0;
+  padding: 75px 0 0 0;
   width: 403px;
 }
 
@@ -52,7 +52,7 @@ h2 {
 }
 
 .all_tasks_head {
-  padding-right: 120px;
+  margin-right: 120px;
 }
 
 .all_tasks_head:before {
@@ -68,7 +68,7 @@ h2 {
 }
 
 nav p + ul {
-  padding: 10px 0 60px 0;
+  margin: 10px 0 60px 0;
 }
 
 nav p,
@@ -98,7 +98,7 @@ nav dd {
 nav dt {
   color: #b3b3b3;
   display: inline-block;
-  padding-right: 163px;
+  margin-right: 163px;
 }
 
 .active {
@@ -114,16 +114,16 @@ nav .active dd {
 }
 
 .indent {
-  padding-left: 100px;
+  margin-left: 100px;
 }
 
 article:nth-of-type(2) ul {
-  padding-top: 25px;
+  margin-top: 25px;
 }
 
 article:nth-of-type(2) li  {
   color: #b3b3b3;
-  padding: 0 0 20px 135px;
+  margin: 0 0 20px 135px;
   text-decoration: line-through;
 }
 
@@ -134,7 +134,6 @@ Main Article
 ============
 */
 main {
-  height: 100vh;
   margin-left: 403px;
   padding: 75px 15px;
 }
@@ -145,7 +144,7 @@ main p {
 }
 
 main h1 {
-  padding: 0 15px 35px 35px;
+  margin: 0 15px 35px 35px;
 }
 
 main p {
@@ -165,7 +164,7 @@ input[type="checkbox"] {
 
 #new_task {
   display: inline-block;
-  padding: 0 0 0 35px;
+  margin: 0 0 0 35px;
 }
 
 #new_task:before {
@@ -174,8 +173,7 @@ input[type="checkbox"] {
 }
 
 main ul {
-  margin-right: 9.7%;
-  padding: 15px 0 0 15px;
+  margin: 15px 9.7% 0 15px;
 }
 
 #current_tasks li {
@@ -324,13 +322,12 @@ Media Queries
       left: 52px;
   }
   nav {
-    padding-top: 75px;
     position: absolute;
       left: -403px;
   }
   main {
     margin-left: 0;
-    padding-top: 53px;
+    padding-top: 55px;
   }
   #nav_toggle:checked ~ nav {
     display: inline-block;
@@ -384,10 +381,10 @@ Media Queries
     width: 303px;
   }
   .all_tasks_head {
-    padding-right: 20px;
+    margin-right: 20px;
   }
   nav dt {
-    padding-right: 63px;
+    margin-right: 63px;
   }
   #nav_toggle:checked ~ main {
     margin-left: 303px;
@@ -403,17 +400,20 @@ Media Queries
   form {
     left: 9%;
   }
+  label img {
+    left: 32px;
+  }
   nav {
     width: 203px;
   }
   .indent {
-    padding-left: 25px;
+    margin-left: 25px;
   }
   nav dl {
     padding: 10px 0 10px 60px;
   }
   article:nth-of-type(2) li {
-    padding: 0 0 20px 60px;
+    margin: 0 0 20px 60px;
   }
   #nav_toggle:checked ~ main {
     margin-left: 203px;
@@ -421,7 +421,16 @@ Media Queries
   #nav_toggle:checked ~ label img {
     position: relative;
       top: 25px;
-      left: 255px;
+      left: 235px;
+  }
+  main h1 {
+    margin: 0 15px 35px 15px;
+  }
+  #new_task {
+    margin: 0 0 0 20px;
+  }
+  main ul {
+    margin: 15px 0 0 0;
   }
 }
 
@@ -438,6 +447,9 @@ Media Queries
 }
 
 @media(max-width: 400px) {
+  label img {
+    left: 17px;
+  }
   form {
     left: 0;
   }
@@ -462,27 +474,33 @@ Media Queries
     width: 180px;
   }
   .all_tasks_head {
-    padding-right: 10px;
+    margin-right: 10px;
   }
   .indent {
-    padding-left: 15px;
+    margin-left: 15px;
   }
   nav dl {
     padding: 10px 0 10px 50px;
   }
   nav dt {
-    padding-right: 52px;
+    margin-right: 52px;
   }
   article:nth-of-type(2) li {
-    padding: 0 0 20px 50px;
+    margin: 0 0 20px 50px;
+  }
+  main {
+    padding: 55px 0;
+  }
+  #current_tasks li {
+    padding: 16px 20px 16px 20px;
   }
   #nav_toggle:checked ~ main {
-    margin-left: 165px;
+    margin-left: 180px;
   }
   #nav_toggle:checked ~ label img {
     position: relative;
       top: 25px;
-      left: 217px;
+      left: 197px;
   }
   #nav_toggle:checked ~ main ul {
     margin-right: 0;

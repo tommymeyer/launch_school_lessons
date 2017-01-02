@@ -44,7 +44,6 @@
 //   }
 // }
 
-
 // function primeCheck(n) {
 //   if (n < 1) {
 //     return false;
@@ -58,7 +57,6 @@
 //
 //   return true;
 // }
-
 
 // function isXor(a, b) {
 //   if (a && !b || !a && b) {

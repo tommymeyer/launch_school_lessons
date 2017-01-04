@@ -19,20 +19,19 @@ function checkGoldbach(n) {
   }
 
   var num1 = 1;
-  var num2;
-  var found;
+  var num2, value;
 
   do {
     num1++;
     num2 = n - num1;
+
     if (primeCheck(num1) && primeCheck(num2)) {
-      found = true;
+      value = true;
       console.log(num1, num2);
     }
-
   } while (num1 !== num2);
 
-  if (!found) {
+  if (!value) {
     console.log(null);
   }
 }

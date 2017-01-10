@@ -1,4 +1,4 @@
-function substr(string, start, end) {
+function substring(string, start, end) {
   var newString = '';
   var temp;
 

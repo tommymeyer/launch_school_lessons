@@ -1,8 +1,16 @@
 // First set of Array Exercises
 // 1.
-// function lastInArray(n) {
-//   for ()
-// }
+var arr = [1, 2, 3, 4, 5];
+
+function lastInArray(n) {
+  var reverseArr = [];
+
+  for (var i = n.length - 1; i >= 0; i--) {
+    reverseArr.push(n[i]);
+  }
+
+  return reverseArr[0];
+}
 
 // 2
 var names = ['Jim', 'Bob', 'Joe'];
@@ -27,6 +35,7 @@ var array = [1, 2, 3, 4];
 
 function reverse(are) {
   var reversedArray = [];
+
   for (var i = are.length - 1; i >= 0; i--) {
     reversedArray.push(are[i]);
   }

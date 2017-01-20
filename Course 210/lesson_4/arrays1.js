@@ -57,3 +57,14 @@ function firstInstance(n, arr) {
 }
 
 // 5
+var isArray = [1, 'a', 4];
+
+function la4(jibberish) {
+  var newString = '';
+
+  for (var i = 0; i < jibberish.length; i++) {
+    newString += jibberish[i].toString();
+  }
+
+  return newString;
+}

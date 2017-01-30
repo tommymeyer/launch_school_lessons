@@ -1,5 +1,5 @@
 // First set of Array Exercises
-// 1.
+// 1
 var arr = [1, 2, 3, 4, 5];
 
 function lastInArray(n) {
@@ -46,6 +46,7 @@ function reverse(are) {
 // 4
 function firstInstance(n, arr) {
   var position = -1;
+
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] === n) {
       position = i;

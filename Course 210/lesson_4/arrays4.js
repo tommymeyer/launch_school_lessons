@@ -62,7 +62,8 @@
 // }
 
 // 4
-var origArr = [1, 2, 1, 2], str = ' and ';
+var origArr = [1, 2, 1, 2];
+var str = ' and ';
 
 function join(arr, sep) {
   var newStr = '';

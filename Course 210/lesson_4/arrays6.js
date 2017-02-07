@@ -4,6 +4,7 @@ var array2 = ["E", 2, "F", "G", 5, "H", 7, "I", "J", 10];
 var array3 = [1, 2, 3, 4];
 var arrays = [[1, 2], [3, 4, 5], [6, 7], [8]];
 var array4 = [1, 1, 2, 2, 3, 3, 4, 4];
+var array5 = [-1, 3, 4, 6, 9];
 
 // 1.
 // ===My Solution===
@@ -113,3 +114,16 @@ var array4 = [1, 1, 2, 2, 3, 3, 4, 4];
 //
 //   return newArr;
 // }
+
+// Section 11: Find Missing Numbers
+function missingNo(arr) {
+  var newArr = [];
+
+  for (var i = arr[0]; i < arr[arr.length - 1]; i++) {
+    if (arr.indexOf(i) < 0) {
+      newArr.push(i);
+    }
+  }
+
+  return newArr;
+}

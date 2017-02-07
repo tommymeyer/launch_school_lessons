@@ -59,20 +59,20 @@ var array4 = [1, 1, 2, 2, 3, 3, 4, 4];
 // }
 
 // ===LS Solution===
-function mirroredArray(arr) {
-  return arr.concat(arr.slice().reverse());
-}
+// function mirroredArray(arr) {
+//   return arr.concat(arr.slice().reverse());
+// }
 
 // 4.
 // function joinArray(arr, joiner) {
-//   var joinedArray = arr[0].toString();
+//   var newArr = arr[0].toString();
 //   joiner = joiner || '';
 //
 //   for (var i = 1; i < arr.length; i++) {
-//     joinedArray += joiner + arr[i].toString();
+//     newArr += joiner + arr[i].toString();
 //   }
 //
-//   return joinedArray;
+//   return newArr;
 // }
 
 // 5.

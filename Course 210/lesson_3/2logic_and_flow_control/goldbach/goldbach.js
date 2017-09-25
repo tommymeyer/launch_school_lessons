@@ -15,7 +15,6 @@ function isPrime(number) {
 function goldbach(n) {
   if (n < 4 || n % 2 === 1) {
     console.log(null);
-    return;
   }
 
   var num1 = 1;

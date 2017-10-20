@@ -9,7 +9,7 @@ function pattern(n) {
     }
 
     for (var k = i + 1; k <= n; k++) {
-      str += "*"
+      str += "*";
     }
 
     console.log(str);
